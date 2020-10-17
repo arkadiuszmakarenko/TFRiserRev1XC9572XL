@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "uni9000_ver" -lib "aim_ver" -lib "cpld_ver" -lib "xilinxcorelib_ver" -o "C:/Repo/cd32_riser/firmware/cpld/TFRiserRev1/address_decoder_isim_beh.exe" -prj "C:/Repo/cd32_riser/firmware/cpld/TFRiserRev1/address_decoder_beh.prj" "work.address_decoder" "work.glbl" 
