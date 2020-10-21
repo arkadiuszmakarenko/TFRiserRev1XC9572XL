@@ -42,7 +42,7 @@ module main_top(
 	 output INTSIG5,
 	 output INTSIG6,
 	 input INTSIG7,
-	 input INTSIG8, //SPI_NSS
+	 output INTSIG8, //SPI_NSS
 
 
 
@@ -54,22 +54,75 @@ module main_top(
 
 );
 
-wire rtc_decode = A[23:16] == 8'b1101_1100; //RTC registers at $DC0000 - $DCFFFF read,
+wire rtc_decode = A[23:8] == 16'b1101_1100_0000_0000; //RTC registers at $DC0000 - $DCFFFF read,
+wire JOYDATA = A[23:3] == {20'hDFF00, 1'b1}; 
+
+wire POTGOR_decode = A[23:0] == {24'hDFF016}; // POTGOR DFF016 - righ middle button
+wire CIAAPRA_decode = A[23:0] == {24'hBFE001}; //CIAAPRA - left button
+
+wire punt_int = (JOYDATA|rtc_decode|POTGOR_decode);
+
 reg rtc_int;
-reg dsack_int;
+reg joy_int;
+reg button_int;
+
+reg[1:0] intsig_int;
+reg punt_ok;
+
+reg[1:0] ack;
+reg actual_acknowledge = 0;
+
+
 
 always @(posedge CLKCPU_A) begin 
-	rtc_int <= PUNT_IN & rtc_decode ;
 
+	punt_ok <= PUNT_IN & punt_int;
+		
+	
+	if (AS20 == 1'b0) begin
+		rtc_int <= PUNT_IN & rtc_decode ;
+		joy_int <= PUNT_IN & JOYDATA;
+		button_int <= PUNT_IN & (POTGOR_decode);
+	end else begin 
+		rtc_int <= 1'b0;
+		joy_int <= 1'b0;
+		button_int <= 1'b0;
+		end
+	
+	
+	
+	actual_acknowledge <= ack == 2'b01;  
+   ack <= {ack[0], INTSIG7};
+  
 end
 
 
 
-// punt works by respecting the accelerator punt over our punt.
-assign PUNT_OUT = PUNT_IN ? (rtc_decode ? 1'b0 : 1'bz) : 1'b0;
-assign INTSIG2 = rtc_int;    
+always @(posedge CLKCPU_A or posedge AS20) begin 
+	if (AS20 == 1'b1) begin 
+		intsig_int <= 2'b11;
+	end else begin 
+			if ( actual_acknowledge ) begin
+				intsig_int <= 2'b10;
+			end else begin
+				intsig_int <= 2'b11; 
+			end	
+	end
+end 
 
-assign DSACK = rtc_int?(INTSIG7?2'b10:2'b11):2'bzz ;
+
+
+
+// punt works by respecting the accelerator punt over our punt.
+assign PUNT_OUT = PUNT_IN ? ( punt_int ? 1'b0 : 1'bz) : 1'b0;
+
+assign INTSIG2 = button_int;
+assign INTSIG1 = rtc_int;
+assign INTSIG8 = joy_int;   
+
+
+assign DSACK = punt_ok?intsig_int:2'bzz ;
+ 
 
 assign INTSIG3 = A[3];
 assign INTSIG5 = A[5];

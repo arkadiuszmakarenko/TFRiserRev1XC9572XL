@@ -1,0 +1,312 @@
+MODELDATA
+MODELDATA_VERSION "v1998.8"
+DESIGN "main_top";
+
+/* port drive, load, max capacitance and max transition in data file */
+PORTDATA
+A<22>: MAXTRANS(0.0);
+A<20>: MAXTRANS(0.0);
+A<19>: MAXTRANS(0.0);
+A<18>: MAXTRANS(0.0);
+A<23>: MAXTRANS(0.0);
+A<21>: MAXTRANS(0.0);
+A<17>: MAXTRANS(0.0);
+A<16>: MAXTRANS(0.0);
+CLKCPU_A: MAXTRANS(0.0);
+INTSIG7: MAXTRANS(0.0);
+PUNT_IN: MAXTRANS(0.0);
+A<3>: MAXTRANS(0.0);
+A<5>: MAXTRANS(0.0);
+DSACK<0>: MAXTRANS(0.0);
+INTSIG2: MAXTRANS(0.0);
+PUNT_OUT: MAXTRANS(0.0);
+DSACK<1>: MAXTRANS(0.0);
+INTSIG3: MAXTRANS(0.0);
+INTSIG5: MAXTRANS(0.0);
+ENDPORTDATA
+
+/* timing arc data */
+TIMINGDATA
+
+ARCDATA
+A<3>_INTSIG3_delay:
+CELL_RISE(scalar) {
+  VALUES("5");
+}
+CELL_FALL(scalar) {
+  VALUES("5");
+}
+ENDARCDATA
+
+ARCDATA
+A<5>_INTSIG5_delay:
+CELL_RISE(scalar) {
+  VALUES("5");
+}
+CELL_FALL(scalar) {
+  VALUES("5");
+}
+ENDARCDATA
+
+ARCDATA
+A<19>_PUNT_OUT_delay:
+CELL_RISE(scalar) {
+  VALUES("10.4");
+}
+CELL_FALL(scalar) {
+  VALUES("10.4");
+}
+ENDARCDATA
+
+ARCDATA
+A<18>_PUNT_OUT_delay:
+CELL_RISE(scalar) {
+  VALUES("10.4");
+}
+CELL_FALL(scalar) {
+  VALUES("10.4");
+}
+ENDARCDATA
+
+ARCDATA
+A<23>_PUNT_OUT_delay:
+CELL_RISE(scalar) {
+  VALUES("10.4");
+}
+CELL_FALL(scalar) {
+  VALUES("10.4");
+}
+ENDARCDATA
+
+ARCDATA
+A<20>_PUNT_OUT_delay:
+CELL_RISE(scalar) {
+  VALUES("10.4");
+}
+CELL_FALL(scalar) {
+  VALUES("10.4");
+}
+ENDARCDATA
+
+ARCDATA
+A<17>_PUNT_OUT_delay:
+CELL_RISE(scalar) {
+  VALUES("10.4");
+}
+CELL_FALL(scalar) {
+  VALUES("10.4");
+}
+ENDARCDATA
+
+ARCDATA
+A<16>_PUNT_OUT_delay:
+CELL_RISE(scalar) {
+  VALUES("10.4");
+}
+CELL_FALL(scalar) {
+  VALUES("10.4");
+}
+ENDARCDATA
+
+ARCDATA
+PUNT_IN_PUNT_OUT_delay:
+CELL_RISE(scalar) {
+  VALUES("10.4");
+}
+CELL_FALL(scalar) {
+  VALUES("10.4");
+}
+ENDARCDATA
+
+ARCDATA
+A<21>_PUNT_OUT_delay:
+CELL_RISE(scalar) {
+  VALUES("10.4");
+}
+CELL_FALL(scalar) {
+  VALUES("10.4");
+}
+ENDARCDATA
+
+ARCDATA
+A<22>_PUNT_OUT_delay:
+CELL_RISE(scalar) {
+  VALUES("10.4");
+}
+CELL_FALL(scalar) {
+  VALUES("10.4");
+}
+ENDARCDATA
+
+ARCDATA
+CLKCPU_A_DSACK<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("8.9");
+}
+CELL_FALL(scalar) {
+  VALUES("8.9");
+}
+ENDARCDATA
+
+ARCDATA
+CLKCPU_A_INTSIG2_delay:
+CELL_RISE(scalar) {
+  VALUES("3.5");
+}
+CELL_FALL(scalar) {
+  VALUES("3.5");
+}
+ENDARCDATA
+
+ARCDATA
+CLKCPU_A_DSACK<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("8.9");
+}
+CELL_FALL(scalar) {
+  VALUES("8.9");
+}
+ENDARCDATA
+
+ARCDATA
+A<16>_CLKCPU_A_setup:
+CONSTRAINT(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+A<17>_CLKCPU_A_setup:
+CONSTRAINT(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+A<18>_CLKCPU_A_setup:
+CONSTRAINT(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+A<19>_CLKCPU_A_setup:
+CONSTRAINT(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+A<20>_CLKCPU_A_setup:
+CONSTRAINT(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+A<21>_CLKCPU_A_setup:
+CONSTRAINT(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+A<22>_CLKCPU_A_setup:
+CONSTRAINT(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+A<23>_CLKCPU_A_setup:
+CONSTRAINT(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+INTSIG7_CLKCPU_A_setup:
+CONSTRAINT(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+PUNT_IN_CLKCPU_A_setup:
+CONSTRAINT(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+A<16>_CLKCPU_A_hold:
+CONSTRAINT(scalar) {
+  VALUES("-2.3");
+}
+ENDARCDATA
+
+ARCDATA
+A<17>_CLKCPU_A_hold:
+CONSTRAINT(scalar) {
+  VALUES("-2.3");
+}
+ENDARCDATA
+
+ARCDATA
+A<18>_CLKCPU_A_hold:
+CONSTRAINT(scalar) {
+  VALUES("-2.3");
+}
+ENDARCDATA
+
+ARCDATA
+A<19>_CLKCPU_A_hold:
+CONSTRAINT(scalar) {
+  VALUES("-2.3");
+}
+ENDARCDATA
+
+ARCDATA
+A<20>_CLKCPU_A_hold:
+CONSTRAINT(scalar) {
+  VALUES("-2.3");
+}
+ENDARCDATA
+
+ARCDATA
+A<21>_CLKCPU_A_hold:
+CONSTRAINT(scalar) {
+  VALUES("-2.3");
+}
+ENDARCDATA
+
+ARCDATA
+A<22>_CLKCPU_A_hold:
+CONSTRAINT(scalar) {
+  VALUES("-2.3");
+}
+ENDARCDATA
+
+ARCDATA
+A<23>_CLKCPU_A_hold:
+CONSTRAINT(scalar) {
+  VALUES("-2.3");
+}
+ENDARCDATA
+
+ARCDATA
+INTSIG7_CLKCPU_A_hold:
+CONSTRAINT(scalar) {
+  VALUES("-2.3");
+}
+ENDARCDATA
+
+ARCDATA
+PUNT_IN_CLKCPU_A_hold:
+CONSTRAINT(scalar) {
+  VALUES("-2.3");
+}
+ENDARCDATA
+
+ENDTIMINGDATA
+ENDMODELDATA
