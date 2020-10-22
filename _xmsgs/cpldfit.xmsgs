@@ -26,6 +26,9 @@
 <msg type="warning" file="Cpld" num="936" delta="old" >The output buffer &apos;<arg fmt="%s" index="1">INTSIG4_OBUF</arg>&apos; is missing an input and will be deleted.
 </msg>
 
+<msg type="warning" file="Cpld" num="1007" delta="old" >Removing unused input(s) &apos;<arg fmt="%s" index="1">A&lt;0&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
 <msg type="warning" file="Cpld" num="1007" delta="old" >Removing unused input(s) &apos;<arg fmt="%s" index="1">D&lt;24&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
 </msg>
 

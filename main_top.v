@@ -57,8 +57,11 @@ module main_top(
 wire rtc_decode = A[23:8] == 16'b1101_1100_0000_0000; //RTC registers at $DC0000 - $DCFFFF read,
 wire JOYDATA = A[23:3] == {20'hDFF00, 1'b1}; 
 
-wire POTGOR_decode = A[23:0] == {24'hDFF016}; // POTGOR DFF016 - righ middle button
-wire CIAAPRA_decode = A[23:0] == {24'hBFE001}; //CIAAPRA - left button
+wire POTGOR_decode = A[23:1] == {20'hDFF01, 3'b011}; // POTGOR DFF016 
+//wire POTGO_decode = A[23:1] == {20'hDFF03, 3'b010};  // POTGO DFF034
+
+//wire POTGOR_decode = A[23:3] == {20'hDFF01, 1'b0}; // POTGOR DFF016 //DFF012 DFF014
+
 
 wire punt_int = (JOYDATA|rtc_decode|POTGOR_decode);
 
@@ -82,7 +85,7 @@ always @(posedge CLKCPU_A) begin
 	if (AS20 == 1'b0) begin
 		rtc_int <= PUNT_IN & rtc_decode ;
 		joy_int <= PUNT_IN & JOYDATA;
-		button_int <= PUNT_IN & (POTGOR_decode);
+		button_int <= PUNT_IN & POTGOR_decode;
 	end else begin 
 		rtc_int <= 1'b0;
 		joy_int <= 1'b0;
