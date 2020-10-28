@@ -40,7 +40,7 @@ module main_top(
 	 output INTSIG3,
 	 output INTSIG4,
 	 output INTSIG5,
-	 output INTSIG6,
+	 input INTSIG6,
 	 input INTSIG7,
 	 output INTSIG8, //SPI_NSS
 
@@ -58,12 +58,14 @@ wire rtc_decode = A[23:8] == 16'b1101_1100_0000_0000; //RTC registers at $DC0000
 wire JOYDATA = A[23:3] == {20'hDFF00, 1'b1}; 
 
 wire POTGOR_decode = A[23:1] == {20'hDFF01, 3'b011}; // POTGOR DFF016 
-//wire POTGO_decode = A[23:1] == {20'hDFF03, 3'b010};  // POTGO DFF034
+wire POTGO_decode = A[23:1] == {20'hDFF03, 3'b010};  // POTGO DFF034
 
 //wire POTGOR_decode = A[23:3] == {20'hDFF01, 1'b0}; // POTGOR DFF016 //DFF012 DFF014
 
+wire enable = INTSIG6 == 1'b1;
 
-wire punt_int = (JOYDATA|rtc_decode|POTGOR_decode);
+
+wire punt_int = (JOYDATA|rtc_decode|POTGOR_decode|POTGO_decode)&enable;
 
 reg rtc_int;
 reg joy_int;
@@ -83,9 +85,9 @@ always @(posedge CLKCPU_A) begin
 		
 	
 	if (AS20 == 1'b0) begin
-		rtc_int <= PUNT_IN & rtc_decode ;
+		rtc_int <= PUNT_IN & rtc_decode;
 		joy_int <= PUNT_IN & JOYDATA;
-		button_int <= PUNT_IN & POTGOR_decode;
+		button_int <= PUNT_IN & (POTGOR_decode|POTGO_decode);
 	end else begin 
 		rtc_int <= 1'b0;
 		joy_int <= 1'b0;
@@ -119,9 +121,9 @@ end
 // punt works by respecting the accelerator punt over our punt.
 assign PUNT_OUT = PUNT_IN ? ( punt_int ? 1'b0 : 1'bz) : 1'b0;
 
-assign INTSIG2 = button_int;
+assign INTSIG2 = button_int&enable;
 assign INTSIG1 = rtc_int;
-assign INTSIG8 = joy_int;   
+assign INTSIG8 = joy_int&enable;   
 
 
 assign DSACK = punt_ok?intsig_int:2'bzz ;

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-10-22T17:33:24</DateModified>
+  <DateModified>2020-10-28T20:23:21</DateModified>
   <ModuleName>main_top</ModuleName>
-  <SummaryTimeStamp>2020-10-21T16:33:17</SummaryTimeStamp>
+  <SummaryTimeStamp>2020-10-28T20:15:58</SummaryTimeStamp>
   <SavedFilePath>C:/Repo/cpld/TFRiserRev1XC9572XL/iseconfig/main_top.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Repo/cpld/TFRiserRev1XC9572XL\</ImplementationReportsDirectory>
   <DateInitialized>2020-10-15T19:36:02</DateInitialized>
