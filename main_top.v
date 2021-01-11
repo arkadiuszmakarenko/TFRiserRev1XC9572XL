@@ -52,7 +52,7 @@ module main_top(
 
 );
 
-//wire rtc_decode = A[23:8] == 16'b1101_1100_0000_0000; //RTC registers at $DC0000 - $DC00FF,
+wire rtc_decode = A[23:8] == 16'b1101_1100_0000_0000; //RTC registers at $DC0000 - $DC00FF,
 //wire clockport = A[23:16] ==  16'b1101_1000;  //D80000 to $D8FFFF - clockport addresses
 wire JOYDATA = A[23:3] == {20'hDFF00, 1'b1};
 wire JOYTEST = A[23:1] == {23'hDFF03, 3'b011};  
@@ -60,18 +60,20 @@ wire JOYTEST = A[23:1] == {23'hDFF03, 3'b011};
 wire POTGOR_decode = A[23:1] == {20'hDFF01, 3'b011}; // POTGOR DFF016 
 wire POTGO_decode = A[23:1] == {20'hDFF03, 3'b010};  // POTGO DFF034
 
-wire CIAAPRA_decode = A[23:8] == {20'hBFE0}; // CIAAPRA BFE001  
+//wire CIAAPRA_decode = A[23:8] == {16'hBFE0}; // CIAAPRA BFE001 - BFE0FF - Bullfrog games fix
+wire CIAAPRA_decode = A[23:0] == {24'hBFE001};
 wire CIAADRA_decode = A[23:0] == {24'hBFE201}; // CIAADDRA BFE201
 
-//wire Direct_Access = A[23:1] == {23'hBA000, 3'b011}; // Direct access to set up sensitivity
+wire Direct_Access = A[23:1] == {23'hBA000, 3'b011}; // Direct access to set up sensitivity
 
 wire enable = INTSIG6 == 1'b1;		//Enable ports override
 
 //clockport | 
-wire punt_int =  ( (JOYDATA|JOYTEST|POTGOR_decode|POTGO_decode|CIAAPRA_decode|CIAADRA_decode)&enable ); //Direct_Access |
+wire punt_int =  rtc_decode | Direct_Access |( (JOYDATA|JOYTEST|POTGOR_decode|POTGO_decode|CIAAPRA_decode|CIAADRA_decode)&enable );
 
 
-//reg da_int;
+reg rtc_int;
+reg da_int;
 reg joy_int;
 reg button_int;
 //reg clockport_int;
@@ -90,14 +92,14 @@ always @(posedge CLKCPU_A) begin
 		
 // Wait for Address Strobe to rise interrupt.
 	if (DS20 == 1'b0) begin
-		//da_int <= PUNT_IN & Direct_Access;
-		//rtc_int <= PUNT_IN & rtc_decode;
+		da_int <= PUNT_IN & Direct_Access;
+		rtc_int <= PUNT_IN & rtc_decode;
 		joy_int <= PUNT_IN & (JOYDATA|CIAADRA_decode);
 		button_int <= PUNT_IN & (POTGOR_decode|POTGO_decode|CIAAPRA_decode|JOYTEST);
 		//clockport_int <= PUNT_IN & clockport;
 	end else begin 
-		//da_int <= 1'b0;
-		//rtc_int <= 1'b0;
+		da_int <= 1'b0;
+		rtc_int <= 1'b0;
 		joy_int <= 1'b0;
 		button_int <= 1'b0;
 		//clockport_int <= 1'b0;
@@ -132,9 +134,9 @@ assign PUNT_OUT = PUNT_IN ? ( punt_int ? 1'b0 : 1'bz) : 1'b0;
 
 
 //STM32 Interrupts.
-//assign INTSIG1 = rtc_int;
+assign INTSIG1 = rtc_int;
 assign INTSIG2 = button_int&enable;
-assign INTSIG8 = (joy_int&enable);  //da_int | 
+assign INTSIG8 = da_int | (joy_int&enable);  
 //assign INTSIG4 = clockport_int; 
 
 
