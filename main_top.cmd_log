@@ -1,0 +1,411 @@
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+taengine -intstyle ise -f main_top -w --format html1 -l main_top_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+taengine -intstyle ise -f main_top -w --format html1 -l main_top_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc main_top.ucf -p xc9572xl-VQ64-5 main_top.ngc main_top.ngd  
+cpldfit -intstyle ise -p xc9572xl-5-VQ64 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper main_top.ngd 
+XSLTProcess main_top_build.xml 
+tsim -intstyle ise main_top main_top.nga 
+hprep6 -s IEEE1149 -n main_top -i main_top 
+xst -intstyle ise -ifn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.xst" -ofn "C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.syr" 

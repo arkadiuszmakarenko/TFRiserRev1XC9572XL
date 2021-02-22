@@ -1,0 +1,548 @@
+ 
+cpldfit:  version O.40d                             Xilinx Inc.
+                                  Fitter Report
+Design Name: main_top                            Date:  2- 4-2021,  5:49PM
+Device Used: XC9572XL-5-VQ64
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+18 /72  ( 25%) 29  /360  (  8%) 101/216 ( 47%)   11 /72  ( 15%) 37 /52  ( 71%)
+
+** Function Block Resources **
+
+Function    Mcells      FB Inps     Pterms      IO          
+Block       Used/Tot    Used/Tot    Used/Tot    Used/Tot    
+FB1           9/18       26/54       11/90       9/13
+FB2           5/18       24/54       12/90       3/13
+FB3           3/18       26/54        5/90      13/14
+FB4           1/18       25/54        1/90      12/12*
+             -----       -----       -----      -----    
+             18/72      101/216      29/360     37/52 
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+Signal 'CLKCPU_A' mapped onto global clock net GCK1.
+Global output enable net(s) unused.
+Global set/reset net(s) unused.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :   28          28    |  I/O              :    36      46
+Output        :    8           8    |  GCK/IO           :     1       3
+Bidirectional :    0           0    |  GTS/IO           :     0       2
+GCK           :    1           1    |  GSR/IO           :     0       1
+GTS           :    0           0    |
+GSR           :    0           0    |
+                 ----        ----
+        Total     37          37
+
+** Power Data **
+
+There are 18 macrocells in high performance mode (MCHP).
+There are 0 macrocells in low power mode (MCLP).
+End of Mapped Resource Summary
+**************************  Errors and Warnings  ***************************
+
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'main_top.ise'.
+INFO:Cpld - Inferring BUFG constraint for signal 'CLKCPU_A' based upon the LOC
+   constraint 'P15'. It is recommended that you declare this BUFG explicitedly
+   in your design. Note that for certain device families the output of a BUFG
+   constraint can not drive a gated clock, and the BUFG constraint will be
+   ignored.
+INFO:Cpld - Inferring BUFG constraint for signal 'SPI_CK' based upon the LOC
+   constraint 'P16'. It is recommended that you declare this BUFG explicitedly
+   in your design. Note that for certain device families the output of a BUFG
+   constraint can not drive a gated clock, and the BUFG constraint will be
+   ignored.
+INFO:Cpld - Inferring BUFG constraint for signal 'SPI_MOSI' based upon the LOC
+   constraint 'P17'. It is recommended that you declare this BUFG explicitedly
+   in your design. Note that for certain device families the output of a BUFG
+   constraint can not drive a gated clock, and the BUFG constraint will be
+   ignored.
+WARNING:Cpld:936 - The output buffer 'INTSIG5_OBUF' is missing an input and will
+   be deleted.
+WARNING:Cpld:936 - The output buffer 'INTSIG4_OBUF' is missing an input and will
+   be deleted.
+WARNING:Cpld:1007 - Removing unused input(s) 'AS20'.  The input(s) are unused
+   after optimization. Please verify functionality via simulation.
+WARNING:Cpld:1007 - Removing unused input(s) 'D<24>'.  The input(s) are unused
+   after optimization. Please verify functionality via simulation.
+WARNING:Cpld:1007 - Removing unused input(s) 'D<25>'.  The input(s) are unused
+   after optimization. Please verify functionality via simulation.
+WARNING:Cpld:1007 - Removing unused input(s) 'D<26>'.  The input(s) are unused
+   after optimization. Please verify functionality via simulation.
+WARNING:Cpld:1007 - Removing unused input(s) 'D<27>'.  The input(s) are unused
+   after optimization. Please verify functionality via simulation.
+WARNING:Cpld:1007 - Removing unused input(s) 'D<28>'.  The input(s) are unused
+   after optimization. Please verify functionality via simulation.
+WARNING:Cpld:1007 - Removing unused input(s) 'D<29>'.  The input(s) are unused
+   after optimization. Please verify functionality via simulation.
+WARNING:Cpld:1007 - Removing unused input(s) 'D<30>'.  The input(s) are unused
+   after optimization. Please verify functionality via simulation.
+WARNING:Cpld:1007 - Removing unused input(s) 'D<31>'.  The input(s) are unused
+   after optimization. Please verify functionality via simulation.
+WARNING:Cpld:1007 - Removing unused input(s) 'RW'.  The input(s) are unused
+   after optimization. Please verify functionality via simulation.
+WARNING:Cpld:1007 - Removing unused input(s) 'SPI_CK'.  The input(s) are unused
+   after optimization. Please verify functionality via simulation.
+WARNING:Cpld:1007 - Removing unused input(s) 'SPI_MOSI'.  The input(s) are
+   unused after optimization. Please verify functionality via simulation.
+*************************  Summary of Mapped Logic  ************************
+
+** 8 Outputs **
+
+Signal              Total Total Loc     Pin  Pin     Pin     Pwr  Slew Reg Init
+Name                Pts   Inps          No.  Type    Use     Mode Rate State
+PUNT_OUT            1     1     FB1_2   8    I/O     O       STD  FAST 
+INTSIG8             2     3     FB1_10  18   I/O     O       STD  FAST 
+INTSIG2             1     2     FB1_12  23   I/O     O       STD  FAST 
+SPI_MISO            1     18    FB1_15  19   I/O     O       STD  FAST RESET
+INTSIG1             1     18    FB1_17  20   I/O     O       STD  FAST RESET
+DSACK<1>            2     2     FB2_15  6    I/O     O       STD  FAST RESET
+DSACK<0>            3     3     FB2_17  7    I/O     O       STD  FAST RESET
+INTSIG3             1     1     FB3_5   24   I/O     O       STD  FAST 
+
+** 10 Buried Nodes **
+
+Signal              Total Total Loc     Pwr  Reg Init
+Name                Pts   Inps          Mode State
+punt_ok             1     8     FB1_13  STD  RESET
+actual_acknowledge  1     2     FB1_14  STD  RESET
+ack<1>              1     1     FB1_16  STD  RESET
+N0/N0_TRST          2     8     FB1_18  STD  
+ack<0>              1     1     FB2_14  STD  RESET
+$OpTx$FX_DC$25      1     2     FB2_16  STD  
+$OpTx$FX_DC$29      5     20    FB2_18  STD  
+joy_int             2     26    FB3_17  STD  RESET
+button_int          2     25    FB3_18  STD  RESET
+da_int              1     25    FB4_18  STD  RESET
+
+** 29 Inputs **
+
+Signal              Loc     Pin  Pin     Pin     
+Name                        No.  Type    Use     
+PUNT_IN             FB1_5   9    I/O     I
+INTSIG7             FB1_6   10   I/O     I
+INTSIG6             FB1_8   11   I/O     I
+CLKCPU_A            FB1_9   15   GCK/I/O GCK
+DS20                FB2_12  4    I/O     I
+A<2>                FB3_3   31   I/O     I
+A<3>                FB3_4   32   I/O     I
+A<5>                FB3_6   34   I/O     I
+A<1>                FB3_8   25   I/O     I
+A<0>                FB3_9   27   I/O     I
+A<9>                FB3_10  39   I/O     I
+A<4>                FB3_11  33   I/O     I
+A<10>               FB3_12  40   I/O     I
+A<6>                FB3_14  35   I/O     I
+A<7>                FB3_15  36   I/O     I
+A<11>               FB3_16  42   I/O     I
+A<8>                FB3_17  38   I/O     I
+A<12>               FB4_2   43   I/O     I
+A<15>               FB4_3   46   I/O     I
+A<16>               FB4_4   47   I/O     I
+A<13>               FB4_5   44   I/O     I
+A<23>               FB4_6   49   I/O     I
+A<14>               FB4_8   45   I/O     I
+A<20>               FB4_10  51   I/O     I
+A<17>               FB4_11  48   I/O     I
+A<21>               FB4_12  52   I/O     I
+A<22>               FB4_14  50   I/O     I
+A<19>               FB4_15  56   I/O     I
+A<18>               FB4_17  57   I/O     I
+
+Legend:
+Pin No. - ~ - User Assigned
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Imp Pt       - Product terms imported from other macrocells
+Exp Pt       - Product terms exported to other macrocells
+               in direction shown
+Unused Pt    - Unused local product terms remaining in macrocell
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global Clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+X            - Signal used as input to the macrocell logic.
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+Number of function block inputs used/remaining:               26/28
+Number of signals used by logic mapping into function block:  26
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB1_1         (b)     
+PUNT_OUT              1       0     0   4     FB1_2   8     I/O     O
+(unused)              0       0     0   5     FB1_3   12    I/O     
+(unused)              0       0     0   5     FB1_4   13    I/O     
+(unused)              0       0     0   5     FB1_5   9     I/O     I
+(unused)              0       0     0   5     FB1_6   10    I/O     I
+(unused)              0       0     0   5     FB1_7         (b)     
+(unused)              0       0     0   5     FB1_8   11    I/O     I
+(unused)              0       0     0   5     FB1_9   15    GCK/I/O GCK
+INTSIG8               2       0     0   3     FB1_10  18    I/O     O
+(unused)              0       0     0   5     FB1_11  16    GCK/I/O 
+INTSIG2               1       0     0   4     FB1_12  23    I/O     O
+punt_ok               1       0     0   4     FB1_13        (b)     (b)
+actual_acknowledge    1       0     0   4     FB1_14  17    GCK/I/O (b)
+SPI_MISO              1       0     0   4     FB1_15  19    I/O     O
+ack<1>                1       0     0   4     FB1_16        (b)     (b)
+INTSIG1               1       0     0   4     FB1_17  20    I/O     O
+N0/N0_TRST            2       0     0   3     FB1_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: $OpTx$FX_DC$29    10: A<18>             19: INTSIG6 
+  2: A<10>             11: A<19>             20: N0/N0_TRST 
+  3: A<11>             12: A<20>             21: PUNT_IN 
+  4: A<12>             13: A<21>             22: ack<0> 
+  5: A<13>             14: A<22>             23: ack<1> 
+  6: A<14>             15: A<23>             24: button_int 
+  7: A<15>             16: A<8>              25: da_int 
+  8: A<16>             17: A<9>              26: joy_int 
+  9: A<17>             18: DS20             
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+PUNT_OUT             ...................X.................... 1
+INTSIG8              ..................X.....XX.............. 3
+INTSIG2              ..................X....X................ 2
+punt_ok              XXX.......XX..XX....X................... 8
+actual_acknowledge   .....................XX................. 2
+SPI_MISO             .XXXXXXXXXXXXXXXXX..X................... 18
+ack<1>               .....................X.................. 1
+INTSIG1              .XXXXXXXXXXXXXXXXX..X................... 18
+N0/N0_TRST           XXX.......XX..XX....X................... 8
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB2  ***********************************
+Number of function block inputs used/remaining:               24/30
+Number of signals used by logic mapping into function block:  24
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB2_1         (b)     
+(unused)              0       0     0   5     FB2_2   60    I/O     
+(unused)              0       0     0   5     FB2_3   58    I/O     
+(unused)              0       0     0   5     FB2_4   59    I/O     
+(unused)              0       0     0   5     FB2_5   61    I/O     
+(unused)              0       0     0   5     FB2_6   62    I/O     
+(unused)              0       0     0   5     FB2_7         (b)     
+(unused)              0       0     0   5     FB2_8   63    I/O     
+(unused)              0       0     0   5     FB2_9   64    GSR/I/O 
+(unused)              0       0     0   5     FB2_10  1     I/O     
+(unused)              0       0     0   5     FB2_11  2     GTS/I/O 
+(unused)              0       0     0   5     FB2_12  4     I/O     I
+(unused)              0       0     0   5     FB2_13        (b)     
+ack<0>                1       0     0   4     FB2_14  5     GTS/I/O (b)
+DSACK<1>              2       0     0   3     FB2_15  6     I/O     O
+$OpTx$FX_DC$25        1       0     0   4     FB2_16        (b)     (b)
+DSACK<0>              3       0     0   2     FB2_17  7     I/O     O
+$OpTx$FX_DC$29        5       0     0   0     FB2_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: $OpTx$FX_DC$25     9: A<18>             17: A<7> 
+  2: A<0>              10: A<1>              18: A<9> 
+  3: A<12>             11: A<21>             19: DS20 
+  4: A<13>             12: A<22>             20: A<3> 
+  5: A<14>             13: A<2>              21: INTSIG6 
+  6: A<15>             14: A<4>              22: INTSIG7 
+  7: A<16>             15: A<5>              23: actual_acknowledge 
+  8: A<17>             16: A<6>              24: punt_ok 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+ack<0>               .....................X.................. 1
+DSACK<1>             ..................X....X................ 2
+$OpTx$FX_DC$25       .........X....X......................... 2
+DSACK<0>             ..................X...XX................ 3
+$OpTx$FX_DC$29       XXXXXXXXXXXXXXXXXX.XX................... 20
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB3  ***********************************
+Number of function block inputs used/remaining:               26/28
+Number of signals used by logic mapping into function block:  26
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB3_1         (b)     
+(unused)              0       0     0   5     FB3_2   22    I/O     
+(unused)              0       0     0   5     FB3_3   31    I/O     I
+(unused)              0       0     0   5     FB3_4   32    I/O     I
+INTSIG3               1       0     0   4     FB3_5   24    I/O     O
+(unused)              0       0     0   5     FB3_6   34    I/O     I
+(unused)              0       0     0   5     FB3_7         (b)     
+(unused)              0       0     0   5     FB3_8   25    I/O     I
+(unused)              0       0     0   5     FB3_9   27    I/O     I
+(unused)              0       0     0   5     FB3_10  39    I/O     I
+(unused)              0       0     0   5     FB3_11  33    I/O     I
+(unused)              0       0     0   5     FB3_12  40    I/O     I
+(unused)              0       0     0   5     FB3_13        (b)     
+(unused)              0       0     0   5     FB3_14  35    I/O     I
+(unused)              0       0     0   5     FB3_15  36    I/O     I
+(unused)              0       0     0   5     FB3_16  42    I/O     I
+joy_int               2       0     0   3     FB3_17  38    I/O     I
+button_int            2       0     0   3     FB3_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: $OpTx$FX_DC$25    10: A<17>             19: A<5> 
+  2: A<0>              11: A<18>             20: A<6> 
+  3: A<10>             12: A<19>             21: A<7> 
+  4: A<11>             13: A<20>             22: A<8> 
+  5: A<12>             14: A<21>             23: A<9> 
+  6: A<13>             15: A<22>             24: DS20 
+  7: A<14>             16: A<23>             25: A<3> 
+  8: A<15>             17: A<2>              26: PUNT_IN 
+  9: A<16>             18: A<4>             
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+INTSIG3              ........................X............... 1
+joy_int              XXXXXXXXXXXXXXXXXXXXXXXXXX.............. 26
+button_int           XXXXXXXXXXXXXXXXXX.XXXXXXX.............. 25
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB4  ***********************************
+Number of function block inputs used/remaining:               25/29
+Number of signals used by logic mapping into function block:  25
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB4_1         (b)     
+(unused)              0       0     0   5     FB4_2   43    I/O     I
+(unused)              0       0     0   5     FB4_3   46    I/O     I
+(unused)              0       0     0   5     FB4_4   47    I/O     I
+(unused)              0       0     0   5     FB4_5   44    I/O     I
+(unused)              0       0     0   5     FB4_6   49    I/O     I
+(unused)              0       0     0   5     FB4_7         (b)     
+(unused)              0       0     0   5     FB4_8   45    I/O     I
+(unused)              0       0     0   5     FB4_9         (b)     
+(unused)              0       0     0   5     FB4_10  51    I/O     I
+(unused)              0       0     0   5     FB4_11  48    I/O     I
+(unused)              0       0     0   5     FB4_12  52    I/O     I
+(unused)              0       0     0   5     FB4_13        (b)     
+(unused)              0       0     0   5     FB4_14  50    I/O     I
+(unused)              0       0     0   5     FB4_15  56    I/O     I
+(unused)              0       0     0   5     FB4_16        (b)     
+(unused)              0       0     0   5     FB4_17  57    I/O     I
+da_int                1       0     0   4     FB4_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: A<10>             10: A<19>             18: A<5> 
+  2: A<11>             11: A<1>              19: A<6> 
+  3: A<12>             12: A<20>             20: A<7> 
+  4: A<13>             13: A<21>             21: A<8> 
+  5: A<14>             14: A<22>             22: A<9> 
+  6: A<15>             15: A<23>             23: DS20 
+  7: A<16>             16: A<2>              24: A<3> 
+  8: A<17>             17: A<4>              25: PUNT_IN 
+  9: A<18>            
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+da_int               XXXXXXXXXXXXXXXXXXXXXXXXX............... 25
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+
+$OpTx$FX_DC$25 <= (NOT A(1) AND NOT A(5));
+
+
+$OpTx$FX_DC$29 <= ((NOT A(17) AND NOT A(16) AND NOT A(15) AND NOT A(14) AND NOT A(13) AND NOT A(12) AND 
+	NOT A(21) AND NOT A(9) AND A(22))
+	OR (A(18) AND A(17) AND A(16) AND A(15) AND A(14) AND A(13) AND 
+	A(12) AND NOT A(21) AND NOT A(7) AND NOT A(6) AND NOT A(5) AND NOT A(4) AND A(3) AND 
+	NOT A(9) AND A(22) AND INTSIG6)
+	OR (A(18) AND A(17) AND A(16) AND A(15) AND A(14) AND A(13) AND 
+	A(12) AND A(2) AND NOT A(21) AND NOT A(7) AND NOT A(6) AND A(4) AND NOT A(3) AND 
+	NOT A(9) AND A(22) AND INTSIG6 AND NOT $OpTx$FX_DC$25)
+	OR (A(18) AND A(17) AND A(16) AND A(15) AND A(14) AND A(13) AND 
+	NOT A(12) AND NOT A(2) AND A(21) AND NOT A(7) AND NOT A(6) AND NOT A(4) AND NOT A(3) AND 
+	NOT A(22) AND INTSIG6 AND A(0) AND $OpTx$FX_DC$25)
+	OR (NOT A(18) AND A(17) AND NOT A(16) AND NOT A(15) AND NOT A(14) AND NOT A(13) AND 
+	NOT A(12) AND A(2) AND A(21) AND A(1) AND NOT A(7) AND NOT A(6) AND NOT A(5) AND 
+	NOT A(4) AND NOT A(3) AND NOT A(9) AND NOT A(22)));
+
+FDCPE_DSACK0: FDCPE port map (DSACK_I(0),NOT actual_acknowledge,CLKCPU_A,'0',DS20);
+DSACK(0) <= DSACK_I(0) when DSACK_OE(0) = '1' else 'Z';
+DSACK_OE(0) <= punt_ok;
+
+FDCPE_DSACK1: FDCPE port map (DSACK_I(1),'1',CLKCPU_A,'0',DS20);
+DSACK(1) <= DSACK_I(1) when DSACK_OE(1) = '1' else 'Z';
+DSACK_OE(1) <= punt_ok;
+
+FDCPE_INTSIG1: FDCPE port map (INTSIG1,INTSIG1_D,CLKCPU_A,'0','0');
+INTSIG1_D <= (A(20) AND A(19) AND A(18) AND NOT A(17) AND NOT A(16) AND NOT A(15) AND 
+	NOT A(14) AND NOT A(13) AND NOT A(12) AND NOT A(11) AND NOT A(10) AND PUNT_IN AND 
+	A(23) AND NOT A(21) AND NOT DS20 AND NOT A(8) AND NOT A(9) AND A(22));
+
+
+INTSIG2 <= (INTSIG6 AND button_int);
+
+
+INTSIG3 <= A(3);
+
+
+INTSIG8 <= ((da_int)
+	OR (INTSIG6 AND joy_int));
+
+
+N0/N0_TRST <= ((NOT PUNT_IN)
+	OR (A(20) AND A(19) AND NOT A(11) AND NOT A(10) AND A(23) AND NOT A(8) AND 
+	$OpTx$FX_DC$29));
+
+
+PUNT_OUT_I <= '0';
+PUNT_OUT <= PUNT_OUT_I when PUNT_OUT_OE = '1' else 'Z';
+PUNT_OUT_OE <= N0/N0_TRST;
+
+FDCPE_SPI_MISO: FDCPE port map (SPI_MISO,SPI_MISO_D,CLKCPU_A,'0','0');
+SPI_MISO_D <= (A(20) AND A(19) AND NOT A(18) AND NOT A(17) AND NOT A(16) AND NOT A(15) AND 
+	NOT A(14) AND NOT A(13) AND NOT A(12) AND NOT A(11) AND NOT A(10) AND PUNT_IN AND 
+	A(23) AND NOT A(21) AND NOT DS20 AND NOT A(8) AND NOT A(9) AND A(22));
+
+FDCPE_ack0: FDCPE port map (ack(0),INTSIG7,CLKCPU_A,'0','0');
+
+FDCPE_ack1: FDCPE port map (ack(1),ack(0),CLKCPU_A,'0','0');
+
+FDCPE_actual_acknowledge: FDCPE port map (actual_acknowledge,actual_acknowledge_D,CLKCPU_A,'0','0');
+actual_acknowledge_D <= (ack(0) AND NOT ack(1));
+
+FDCPE_button_int: FDCPE port map (button_int,button_int_D,CLKCPU_A,'0','0');
+button_int_D <= ((A(20) AND A(19) AND A(18) AND A(17) AND A(16) AND A(15) AND 
+	A(14) AND A(13) AND A(12) AND NOT A(11) AND NOT A(10) AND PUNT_IN AND 
+	A(2) AND A(23) AND NOT A(21) AND NOT DS20 AND NOT A(8) AND NOT A(7) AND NOT A(6) AND 
+	A(4) AND NOT A(3) AND NOT A(9) AND A(22) AND NOT $OpTx$FX_DC$25)
+	OR (A(20) AND A(19) AND A(18) AND A(17) AND A(16) AND A(15) AND 
+	A(14) AND A(13) AND NOT A(12) AND NOT A(11) AND NOT A(10) AND PUNT_IN AND 
+	NOT A(2) AND A(23) AND A(21) AND NOT DS20 AND NOT A(8) AND NOT A(7) AND NOT A(6) AND 
+	NOT A(4) AND NOT A(3) AND NOT A(9) AND NOT A(22) AND A(0) AND $OpTx$FX_DC$25));
+
+FDCPE_da_int: FDCPE port map (da_int,da_int_D,CLKCPU_A,'0','0');
+da_int_D <= (A(20) AND A(19) AND NOT A(18) AND A(17) AND NOT A(16) AND NOT A(15) AND 
+	NOT A(14) AND NOT A(13) AND NOT A(12) AND NOT A(11) AND NOT A(10) AND PUNT_IN AND 
+	A(2) AND A(23) AND A(21) AND A(1) AND NOT DS20 AND NOT A(8) AND NOT A(7) AND 
+	NOT A(6) AND NOT A(5) AND NOT A(4) AND NOT A(3) AND NOT A(9) AND NOT A(22));
+
+FDCPE_joy_int: FDCPE port map (joy_int,joy_int_D,CLKCPU_A,'0','0');
+joy_int_D <= ((A(20) AND A(19) AND A(18) AND A(17) AND A(16) AND A(15) AND 
+	A(14) AND A(13) AND A(12) AND NOT A(11) AND NOT A(10) AND PUNT_IN AND 
+	A(23) AND NOT A(21) AND NOT DS20 AND NOT A(8) AND NOT A(7) AND NOT A(6) AND NOT A(5) AND 
+	NOT A(4) AND A(3) AND NOT A(9) AND A(22))
+	OR (A(20) AND A(19) AND A(18) AND A(17) AND A(16) AND A(15) AND 
+	A(14) AND A(13) AND NOT A(12) AND NOT A(11) AND NOT A(10) AND PUNT_IN AND 
+	NOT A(2) AND A(23) AND A(21) AND NOT DS20 AND NOT A(8) AND NOT A(7) AND NOT A(6) AND 
+	NOT A(4) AND NOT A(3) AND A(9) AND NOT A(22) AND A(0) AND $OpTx$FX_DC$25));
+
+FDCPE_punt_ok: FDCPE port map (punt_ok,punt_ok_D,CLKCPU_A,'0','0');
+punt_ok_D <= (A(20) AND A(19) AND NOT A(11) AND NOT A(10) AND PUNT_IN AND 
+	A(23) AND NOT A(8) AND $OpTx$FX_DC$29);
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XC9572XL-5-VQ64
+
+
+   -----------------------------------------------  
+  /48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 \
+ | 49                                           32 | 
+ | 50                                           31 | 
+ | 51                                           30 | 
+ | 52                                           29 | 
+ | 53                                           28 | 
+ | 54                                           27 | 
+ | 55                                           26 | 
+ | 56               XC9572XL-5-VQ64             25 | 
+ | 57                                           24 | 
+ | 58                                           23 | 
+ | 59                                           22 | 
+ | 60                                           21 | 
+ | 61                                           20 | 
+ | 62                                           19 | 
+ | 63                                           18 | 
+ | 64                                           17 | 
+ \ 1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 /
+   -----------------------------------------------  
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 KPR                              33 A<4>                          
+  2 KPR                              34 A<5>                          
+  3 VCC                              35 A<6>                          
+  4 DS20                             36 A<7>                          
+  5 KPR                              37 VCC                           
+  6 DSACK<1>                         38 A<8>                          
+  7 DSACK<0>                         39 A<9>                          
+  8 PUNT_OUT                         40 A<10>                         
+  9 PUNT_IN                          41 GND                           
+ 10 INTSIG7                          42 A<11>                         
+ 11 INTSIG6                          43 A<12>                         
+ 12 KPR                              44 A<13>                         
+ 13 KPR                              45 A<14>                         
+ 14 GND                              46 A<15>                         
+ 15 CLKCPU_A                         47 A<16>                         
+ 16 KPR                              48 A<17>                         
+ 17 KPR                              49 A<23>                         
+ 18 INTSIG8                          50 A<22>                         
+ 19 SPI_MISO                         51 A<20>                         
+ 20 INTSIG1                          52 A<21>                         
+ 21 GND                              53 TDO                           
+ 22 KPR                              54 GND                           
+ 23 INTSIG2                          55 VCC                           
+ 24 INTSIG3                          56 A<19>                         
+ 25 A<1>                             57 A<18>                         
+ 26 VCC                              58 KPR                           
+ 27 A<0>                             59 KPR                           
+ 28 TDI                              60 KPR                           
+ 29 TMS                              61 KPR                           
+ 30 TCK                              62 KPR                           
+ 31 A<2>                             63 KPR                           
+ 32 A<3>                             64 KPR                           
+
+
+Legend :  NC  = Not Connected, unbonded pin
+         PGND = Unused I/O configured as additional Ground pin
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         KPR  = Unused I/O with weak keeper (leave unconnected)
+         VCC  = Dedicated Power Pin
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xc9572xl-5-VQ64
+Optimization Method                         : DENSITY
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Power Mode                                  : STD
+Ground on Unused IOs                        : OFF
+Set I/O Pin Termination                     : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Input Limit                                 : 54
+Pterm Limit                                 : 25

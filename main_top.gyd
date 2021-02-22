@@ -1,0 +1,55 @@
+Pin Freeze File:  version O.40d
+
+9572XL64 XC9572XL-5-VQ64
+A<0> S:PIN27
+A<10> S:PIN40
+A<11> S:PIN42
+A<12> S:PIN43
+A<13> S:PIN44
+A<14> S:PIN45
+A<15> S:PIN46
+A<16> S:PIN47
+A<17> S:PIN48
+A<18> S:PIN57
+A<19> S:PIN56
+A<1> S:PIN25
+A<20> S:PIN51
+A<21> S:PIN52
+A<22> S:PIN50
+A<23> S:PIN49
+A<2> S:PIN31
+A<4> S:PIN33
+A<5> S:PIN34
+A<6> S:PIN35
+A<7> S:PIN36
+A<8> S:PIN38
+A<9> S:PIN39
+CLKCPU_A S:PIN15
+DS20 S:PIN4
+A<3> S:PIN32
+INTSIG6 S:PIN11
+INTSIG7 S:PIN10
+PUNT_IN S:PIN9
+INTSIG2 S:PIN23
+INTSIG3 S:PIN24
+INTSIG8 S:PIN18
+PUNT_OUT S:PIN8
+SPI_MISO S:PIN19
+DSACK<0> S:PIN7
+DSACK<1> S:PIN6
+INTSIG1 S:PIN20
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_2 N0
+PARTITION FB1_10 INTSIG8_OBUF
+PARTITION FB1_12 INTSIG2_OBUF punt_ok actual_acknowledge clockport_int
+		 ack<1> rtc_int N0/N0_TRST
+PARTITION FB2_14 ack<0> intsig_int<1> $OpTx$FX_DC$25 intsig_int<0>
+		 $OpTx$FX_DC$29
+PARTITION FB3_5 INTSIG3_OBUF$BUF0
+PARTITION FB3_17 joy_int button_int
+PARTITION FB4_18 da_int
+

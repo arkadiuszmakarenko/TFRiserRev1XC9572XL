@@ -53,7 +53,7 @@ module main_top(
 );
 
 wire rtc_decode = A[23:8] == 16'b1101_1100_0000_0000; //RTC registers at $DC0000 - $DC00FF,
-//wire clockport = A[23:16] ==  16'b1101_1000;  //D80000 to $D8FFFF - clockport addresses
+wire clockport = A[23:8] == 16'b1101_1000_0000_0000;  //D80000 to $D800FF - clockport addresses
 wire JOYDATA = A[23:3] == {20'hDFF00, 1'b1};
 wire JOYTEST = A[23:1] == {23'hDFF03, 3'b011};  
 
@@ -68,15 +68,15 @@ wire Direct_Access = A[23:1] == {23'hBA000, 3'b011}; // Direct access to set up 
 
 wire enable = INTSIG6 == 1'b1;		//Enable ports override
 
-//clockport | 
-wire punt_int =  rtc_decode | Direct_Access |( (JOYDATA|JOYTEST|POTGOR_decode|POTGO_decode|CIAAPRA_decode|CIAADRA_decode)&enable );
+
+wire punt_int = clockport |  rtc_decode | Direct_Access |( (JOYDATA|JOYTEST|POTGOR_decode|POTGO_decode|CIAAPRA_decode|CIAADRA_decode)&enable );
 
 
 reg rtc_int;
 reg da_int;
 reg joy_int;
 reg button_int;
-//reg clockport_int;
+reg clockport_int;
 
 reg[1:0] intsig_int;
 reg punt_ok;
@@ -96,13 +96,13 @@ always @(posedge CLKCPU_A) begin
 		rtc_int <= PUNT_IN & rtc_decode;
 		joy_int <= PUNT_IN & (JOYDATA|CIAADRA_decode);
 		button_int <= PUNT_IN & (POTGOR_decode|POTGO_decode|CIAAPRA_decode|JOYTEST);
-		//clockport_int <= PUNT_IN & clockport;
+		clockport_int <= PUNT_IN & clockport;
 	end else begin 
 		da_int <= 1'b0;
 		rtc_int <= 1'b0;
 		joy_int <= 1'b0;
 		button_int <= 1'b0;
-		//clockport_int <= 1'b0;
+		clockport_int <= 1'b0;
 	end
 	
 	
@@ -115,7 +115,7 @@ end
 
 // Insert waitstates for punt_int addresses and release it on raising edge of INTSIG7
 always @(posedge CLKCPU_A or posedge DS20) begin 
-	if (DS20 == 1'b1) begin 
+	if (AS20 == 1'b1) begin 
 		intsig_int <= 2'b11;
 	end else begin 
 			if ( actual_acknowledge ) begin
@@ -137,7 +137,7 @@ assign PUNT_OUT = PUNT_IN ? ( punt_int ? 1'b0 : 1'bz) : 1'b0;
 assign INTSIG1 = rtc_int;
 assign INTSIG2 = button_int&enable;
 assign INTSIG8 = da_int | (joy_int&enable);  
-//assign INTSIG4 = clockport_int; 
+assign SPI_MISO = clockport_int; 
 
 
 //Waitstates
@@ -145,6 +145,5 @@ assign DSACK = punt_ok?intsig_int:2'bzz ;
  
 //Missing Address lines on STM32
 assign INTSIG3 = A[3];
-assign INTSIG5 = A[5];
 
 endmodule

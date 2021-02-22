@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.v -lang verilog -prj TFRiserRev1 -o .spl -module {} -template C:/Xilinx/13.1/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+vhdtdtfi -lib work C:/Repo/cpld/TFRiserRev1XC9572XL/main_top.v -lang verilog -prj TFRiserRev1 -o .spl -module {} -template C:/Xilinx/13.1/ISE_DS/ISE//data/splveri.tft -deleteonerror 
